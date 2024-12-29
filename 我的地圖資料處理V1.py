@@ -21,7 +21,7 @@ except ImportError:
 # 創建主視窗
 root = tk.Tk()
 root.title("選擇檔案介面")  # 設置窗口標題
-root.geometry("700x600")  # 設置窗口大小
+root.geometry("700x550")  # 設置窗口大小
 root.configure(bg="#f0f0f0")  # 設置背景顏色
 
 # 設置字體樣式
@@ -74,7 +74,7 @@ button2 = tk.Button(frame, text="選擇檔案", command=open_file2, font=button_
 button2.grid(row=1, column=2, padx=10, pady=10)
 
 # 訊息框用來顯示讀取的檔案內容
-message_box = tk.Text(root, height=15, width=70, font=("Courier", 10), wrap=tk.WORD, bg="#f8f8f8", fg="#333333", relief="sunken")
+message_box = tk.Text(root, height=8, width=70, font=("Courier", 10), wrap=tk.WORD, bg="#f8f8f8", fg="#333333", relief="sunken")
 message_box.grid(row=2, column=0, columnspan=3, padx=20, pady=20)
 
 # 開始按鈕的功能：讀取檔案內容並顯示在訊息框
